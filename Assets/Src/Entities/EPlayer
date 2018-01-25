@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class EPlayer : MonoBehaviour {
 
-    // Use this for initialization
-    void Start () {
+    private bool isDead = false;
+    private Rigidbody2D player2d;
 
-    }
+	// Use this for initialization
+	void Start () {
+        player2d = GetComponent<Rigidbody2D>();
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		if (isDead == false)
+        {
+            if (Input.GetKey(KeyCode.Space))
+            {
 
-    // Update is called once per frame
-    void Update () {
-
-    }
+            }
+        }
+	}
 }
